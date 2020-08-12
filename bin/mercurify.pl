@@ -6,7 +6,7 @@ use List::Util qw(shuffle);
 );
 
 for( @para ){
-    m/^(\w)(.*)(\w[\.\,\;\?\!]?)$/;
+    m/^(\w)(.*)(\w[\.\,\;\?\!s]?)$/;
     if( $2 && length($2) > 1 ){
         @got = shuffle(split //, $2);
     }else{
